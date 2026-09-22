@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book an Appointment — Crown & Co. Hair Studio</title>
+<meta name="description" content="Book your appointment online at Crown & Co. Hair Studio, or send a request and we'll confirm a time with you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- Calendly's own CSS, loaded only from an allowed host -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">Crown <span>&</span> Co.</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="shop.html">Shop Hair</a></li>
+      <li><a href="booking.html" aria-current="page">Book Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="booking.html" class="btn btn-primary btn-primary-nav">Book an appointment</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="kicker">Book now</span>
+    <h1>Pick a time, or just tell us what works.</h1>
+    <p>Use the live calendar to grab an open slot instantly, or send a request below and we'll text or email to confirm.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="booking-layout">
+
+      <div>
+        <h2 style="font-size:1.4rem; margin-bottom:16px;">Live availability</h2>
+
+        <div class="calendly-wrap">
+          <!--
+            SETUP NOTE FOR YOUR FRIEND (delete this comment once configured):
+            1. Create a free account at https://calendly.com
+            2. Add your services as separate Calendly "Event Types" with their durations
+            3. Copy your scheduling link, e.g. https://calendly.com/your-name
+            4. Replace YOUR-CALENDLY-LINK below with that link
+            5. Delete the <div class="calendly-placeholder"> block below the widget div
+          -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR-CALENDLY-LINK" style="min-width:280px; height:640px;"></div>
+
+          <div class="calendly-placeholder">
+            <p>This is where your live Calendly calendar will appear once it's connected.</p>
+            <code>data-url="https://calendly.com/YOUR-CALENDLY-LINK"</code>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 style="font-size:1.4rem; margin-bottom:16px;">Or request a time</h2>
+        <form class="request-form" id="booking-request-form">
+          <div class="form-row">
+            <div>
+              <label for="req-name">Full name</label>
+              <input type="text" id="req-name" required>
+            </div>
+            <div>
+              <label for="req-phone">Phone number</label>
+              <input type="tel" id="req-phone" required>
+            </div>
+          </div>
+
+          <div>
+            <label for="req-service">Service</label>
+            <select id="req-service" required>
+              <option value="">Select a service</option>
+              <option>Signature Haircut</option>
+              <option>Blowout &amp; Style</option>
+              <option>All-Over Color</option>
+              <option>Balayage / Highlights</option>
+              <option>Sew-In Install</option>
+              <option>Closure / Frontal Install</option>
+              <option>Wig Customization</option>
+              <option>Other / Not sure</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="req-date">Preferred date &amp; time</label>
+            <input type="text" id="req-date" placeholder="e.g. Saturday afternoon, or a specific date" required>
+          </div>
+
+          <div>
+            <label for="req-message">Anything we should know?</label>
+            <textarea id="req-message" placeholder="Hair length, reference photos you'll bring, allergies, etc."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send request</button>
+          <p style="font-size:0.82rem; color:var(--espresso-soft); opacity:0.75;">This opens your email app with the details filled in — just hit send.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Crown &amp; Co. Hair Studio</h4>
+        <p style="max-width: 34ch;">A small local salon offering full hair services and 100% human hair bundles, closures, and wigs.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="shop.html">Shop Hair</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="contact.html">Contact &amp; Hours</a></li>
+          <li><a href="contact.html#map">Directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Crown &amp; Co. Hair Studio. All rights reserved.</span>
+      <span>Site by you, with a little help from Claude.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<!-- Calendly's own embed script, loaded only from an allowed host -->
+<script src="https://assets.calendly.com/assets/external/widget.js"></script>
+</body>
+</html>

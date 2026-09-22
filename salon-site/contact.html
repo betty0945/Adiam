@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Hours — Hair by Adiyam</title>
+<meta name="description" content="Get in touch with Hair by Adiyam see our hours, and find directions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">Hair<span> by</span> Adiyam</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="shop.html">Shop Hair</a></li>
+      <li><a href="booking.html">Book Now</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="booking.html" class="btn btn-primary btn-primary-nav">Book an appointment</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="kicker">Get in touch</span>
+    <h1>We'd love to see you.</h1>
+    <p>Questions about a service, a product, or just want to swing by? Reach out below.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="contact-grid">
+
+      <div>
+        <h2 style="font-size:1.4rem; margin-bottom:16px;">Hours</h2>
+        <table class="hours-table">
+          <tr><td>Monday</td><td>Closed</td></tr>
+          <tr><td>Tuesday &ndash; Friday</td><td>10:00am &ndash; 6:00pm</td></tr>
+          <tr><td>Saturday</td><td>9:00am &ndash; 4:00pm</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+
+        <h2 style="font-size:1.4rem; margin: 32px 0 8px;">Location</h2>
+        <p>123 Main Street<br>Your City, ST 00000</p>
+
+        <div class="social-row">
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a href="tel:+10000000000">Call us</a>
+          <a href="mailto:hello@yoursalon.com">Email us</a>
+        </div>
+
+        <div id="map" class="mt-lg">
+          <!--
+            SETUP NOTE: replace the src query below with your real address
+            (no API key needed for this basic embed).
+          -->
+          <iframe
+            class="map-embed"
+            src="https://www.google.com/maps?q=123+Main+Street&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Salon location map">
+          </iframe>
+        </div>
+      </div>
+
+      <div>
+        <h2 style="font-size:1.4rem; margin-bottom:16px;">Send a message</h2>
+        <form class="request-form" id="contact-form">
+          <div>
+            <label for="c-name">Your name</label>
+            <input type="text" id="c-name" required>
+          </div>
+          <div>
+            <label for="c-email">Your email</label>
+            <input type="email" id="c-email" required>
+          </div>
+          <div>
+            <label for="c-message">Message</label>
+            <textarea id="c-message" required placeholder="How can we help?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p style="font-size:0.82rem; color:var(--espresso-soft); opacity:0.75;">This opens your email app with your message filled in.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Hair by Adiyam</h4>
+        <p style="max-width: 34ch;">A small local salon offering full hair services and 100% human hair bundles, closures, and wigs.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="shop.html">Shop Hair</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="contact.html">Contact &amp; Hours</a></li>
+          <li><a href="contact.html#map">Directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; Hair by Adiyam All rights reserved.</span>
+    
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
